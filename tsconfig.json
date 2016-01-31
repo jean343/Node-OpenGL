@@ -17,10 +17,12 @@
     ],
     "files": [
         "dist/examples/a.d.ts",
+        "dist/index.d.ts",
         "dist/lib/GL.d.ts",
         "examples/a.ts",
         "index.ts",
-        "lib/GL.ts",
+        "lib/GfxTexture.ts",
+        "lib/Graphics.ts",
         "typings/node/node.d.ts",
         "typings/tsd.d.ts"
     ],

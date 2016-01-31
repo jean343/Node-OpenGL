@@ -4,8 +4,10 @@
       "target_name": "Node_OpenGL",
       "sources": [
         "src/main.cpp",
-        "src/graphics.cpp",
-        "src/picam.cpp"
+        "src/GfxTexture.cpp",
+        "src/GfxShader.cpp",
+        "src/GfxProgram.cpp",
+        "src/Graphics.cpp"
       ],
       "defines": [
       ],

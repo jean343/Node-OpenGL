@@ -1,1 +1,2 @@
-export * from "./lib/GL"
+export * from "./lib/GfxTexture"
+export * from "./lib/Graphics"
