@@ -1,6 +1,6 @@
 {
   "name": "opengl",
-  "version": "0.1.1",
+  "version": "0.1.4",
   "author": "Jean-Philippe Bergeron",
   "description": "Node wrapper for the OpenGL library",
   "main": "dist/index.js",
@@ -14,7 +14,7 @@
   },
   "scripts": {
     "preinstall": "tsd install || exit 0",
-    "install": "node-gyp build || exit 0"
+    "install": "node-gyp rebuild || exit 0"
   },
   "repository": {
     "type": "git",

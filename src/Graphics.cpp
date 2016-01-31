@@ -124,8 +124,8 @@ Graphics::Graphics() {
   glClear(GL_COLOR_BUFFER_BIT);
 
   //load the test shaders
-  GSimpleVS.LoadVertexShader("simplevertshader.glsl");
-  GSimpleFS.LoadFragmentShader("simplefragshader.glsl");
+  GSimpleVS.LoadVertexShader("./simplevertshader.glsl");
+  GSimpleFS.LoadFragmentShader("./simplefragshader.glsl");
   GSimpleProg.Create(&GSimpleVS, &GSimpleFS);
   check();
   glUseProgram(GSimpleProg.GetId());

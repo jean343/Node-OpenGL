@@ -41,8 +41,8 @@ GfxTexture::GfxTexture(int width, int height) {
 
   glTexImage2D(GL_TEXTURE_2D, 0, format, Width, Height, 0, format, GL_UNSIGNED_BYTE, NULL);
   check();
-  glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, (GLfloat) GL_NEAREST);
-  glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, (GLfloat) GL_NEAREST);
+  glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, (GLfloat) GL_LINEAR);
+  glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, (GLfloat) GL_LINEAR);
   check();
   glBindTexture(GL_TEXTURE_2D, 0);
 }
@@ -72,7 +72,7 @@ NAN_METHOD(GfxTexture::setPixels) {
 
   v8::Local<v8::Object> bufferObj = info[0]->ToObject();
   char* bufferData = node::Buffer::Data(bufferObj);
-  size_t bufferLength = node::Buffer::Length(bufferObj);
+//  size_t bufferLength = node::Buffer::Length(bufferObj);
 
   bool isColor = false;
 
